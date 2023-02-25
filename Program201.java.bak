@@ -1,0 +1,21 @@
+import java.util.*;
+public class Program201
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		int n;
+		System.out.println("enter the number");
+		n=sc.nextInt();
+		if(n%==0)
+		{
+			System.out.println("Even\n");
+			System.out.println(n+"Even\n");
+		}
+		else
+		{
+			System.out.print("Odd\n");
+			System.out.print(n+"Odd\n");
+		}
+	}
+}

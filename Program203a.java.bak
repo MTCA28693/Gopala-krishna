@@ -1,0 +1,21 @@
+import java.util.*;
+public class Program203a
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int a,b,c,d,l,s;
+		System.out.println("Enter the number:");
+		a=sc.nextInt();
+        System.out.println("Enter the number:");
+		b=sc.nextInt();
+		c=a-b;
+		d=a*b;
+		l=a<b;
+			System.out.println(c);
+			System.out.println(d);
+			System.out.println(l);
+			//System.out.println(num1-"-"num2-"="-result);
+		}
+	}
+
