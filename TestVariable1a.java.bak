@@ -1,0 +1,30 @@
+class Student 
+{
+	int rollno;
+	String name;
+	static String college="MTCA";
+	Student(int r,String n)
+	{
+		rollno=r;
+		name=n;
+	}
+	void display()
+	{
+		System.out.println(rollno+" "+name+" "+college);
+	}
+}
+	public class TestVariable1a
+	{
+	public static void main(String[] args) 
+	{
+		Student st=new Student();
+		System.out.println("Eenter the rollno");
+		r=st.nextInt();
+		System.out.println("Eenter the name");
+        n=st.nextString();
+		//Student s2=new Student(13,"Gopichand");
+		//Student.college="MTI";
+		//s1.display();
+		//s2.display();
+	}
+	}
