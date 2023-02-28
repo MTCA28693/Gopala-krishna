@@ -1,0 +1,20 @@
+ class Rectangle
+{
+	double length;
+	double bearth;
+	//double depth;
+}
+class RectangleDemo
+{
+	public static void main(String[] args) 
+	{
+		Rectangle myrectangle=new Rectangle();
+		double area;
+		myrectangle.length=10;
+		myrectangle.bearth=20;
+		//mybox.depth=150;
+		//area=myrectangle.lenght*myrectangle.bearth;
+		area=lenght*baerth;
+		System.out.println( "area is:"+area);
+	}
+}

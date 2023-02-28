@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Program501a
+{
+	static double Area_of_a_triangle(double base,double height)
+	{
+		return 0.5*base*height;
+	}
+	public static void main(String[] args) 
+	{
+		double base,height;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("\nEnter the base heightof triangle");
+		base=sc.nextDouble();
+		height=sc.nextDouble();
+		System.out.println("area of triangle:"+Area_of_a_triangle(base,height));
+	}
+}

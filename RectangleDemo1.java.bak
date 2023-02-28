@@ -1,0 +1,31 @@
+//import java.util.Scanner;
+ class Rectangle
+{
+	private double length;
+	private double berth;
+	//private double depth;
+	public Rectangle()
+	{
+		length=berth=0.0;
+	}
+	public Rectangle(double l,double b)
+	{
+		length=l;
+		berth=b;
+		//depth=d;
+	}
+	public void area()
+	{
+				System.out.println( "area="+(length*berth));
+	}
+}
+public class RectangleDemo1
+{
+	public static void main(String[] args) 
+	{
+		Rectangle myrectangle1=new Rectangle();
+		Rectangle myrectangle2=new Rectangle(10,15);
+		myrectangle1.area();
+		myRectangle2.area();
+	}
+}

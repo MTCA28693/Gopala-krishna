@@ -1,0 +1,31 @@
+//import java.util.Scanner;
+ class Triangle
+{
+	private double base;
+	private double height;
+	//private double depth;
+	public Triangle()
+	{
+		base=height=0.0;
+	}
+	public Triangle(double b,double h)
+	{
+		base=b;
+		height=h;
+		//depth=d;
+	}
+	public void area()
+	{
+				System.out.println( "area="+(1.0/2*base*height));
+	}
+}
+public class TriangleDemo1
+{
+	public static void main(String[] args) 
+	{
+		Triangle mytriangle1=new Triangle();
+		Triangle mytriangle1=new Triangle(10,15);
+		mytriangle1.area();
+		//mytriangle2.area();
+	}
+}
