@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Number
+{
+	public static int sumDigit(int n)
+	{
+		int sum=0;
+		//int n=this.n1;
+		while(n>0)
+		{
+			sum=sum+n%10;
+			n=n/10;
+		}//while
+			return sum;
+	}//sumDigit
+//number
+//class Test
+//{
+	public static void main(String[] args)
+	{
+		Number obj=new Number();
+		int temp,res;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+	     temp=sc.nextInt();
+		//obj.setn1(temp);
+	    res=obj.sumDigit(temp);
+		System.out.println("Sum of digits of "+temp+" is "+res);
+	}//main
+}//}test

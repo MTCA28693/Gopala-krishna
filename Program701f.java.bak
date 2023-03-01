@@ -1,0 +1,51 @@
+import java.util.*;
+class MyDate
+{
+	private int day;
+	private int month;
+	private int year;
+	public int getday()
+	{
+				return day;
+	}//get_day
+	public int getmonth()
+	{
+				return month;
+	}//get_month
+    public int getyear()
+	{
+		return year;
+	}//get_year
+	public void setday(int d)
+	{
+				 day=d;
+	}//set_day
+	public void setmonth(int m)
+	{
+				 month=m;
+	}//set_month
+	public void setyear(int y)
+	{
+		year=y;
+	}//set_year
+}//mydate
+class Test5
+{
+	public static void main(String[] args) 
+	{
+		int day,month,year;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the day\n");
+		day=sc.nextInt();
+		System.out.println("Enter the month\n");
+		month=sc.nextInt();
+		System.out.println("Enter the year\n");
+		year=sc.nextInt();
+		MyDate obj=new MyDate();
+		obj.setday(day);
+		obj.setmonth(month);
+		obj.setyear(year);
+		//obj.day=05;
+		System.out.println("\n"+obj.getday()+"-"+obj.getmonth()+"-"+obj.getyear());
+	}//main
+}//test

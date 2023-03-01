@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class Number
+{
+	private int n1;
+	public void setn1(int n1)
+	{
+		this.n1=n1;
+	}//sten1
+	public int getn1()
+	{
+		return this.n1;
+	}//getn1
+	public int reverseDigit()
+	{
+		int sum=0;
+		int n=this.n1;
+			while(n>0)
+		{
+			sum=sum*10+n%10;
+			n=n/10;
+		}//while
+		return sum;
+	}//reverseDigit
+	public int sumDigit()
+	{
+		int sum=0;
+		int n=this.n1;
+		while(n>0)
+		{
+			sum=sum+n%10;
+			n=n/10;
+		}//while
+			return sum;
+	}//sumDigit
+}//number
+class Test
+{
+	public static void main(String[] args)
+	{
+		Number obj=new Number();
+		//int temp,res;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number");
+	    int temp=sc.nextInt();
+		obj.setn1(temp);
+	    int res=obj.sumDigit();
+		System.out.println("Sum of digits of "+obj.getn1()+"is "+res);
+		res=obj.reverseDigit();
+		System.out.println("reverse digits of "+obj.getn1()+"is "+res);
+	}//main
+		}//test
