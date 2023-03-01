@@ -1,0 +1,48 @@
+import java.util.*;
+class MyDate
+{
+	private int day;
+	private int month;
+	private int year;
+	public int get_day()
+	{
+				return day;
+	}
+	public int get_month()
+	{
+				return month;
+	}
+    public int get_year()
+	{
+		return year;
+	}//get_day
+	public void set_day(int d)
+	{
+				 day=d;
+	}
+	public void set_month(int m)
+	{
+				 month=m;
+	}
+	public void set_year(int y)
+	{
+		year=y;
+	}//set_day
+}//mydate
+class Test5
+{
+	public static void main(String[] args) 
+	{
+		int day,month,year;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the day");
+		day=sc.nextInt();
+		System.out.println("Enter the month");
+		month=sc.nextInt();
+		System.out.println("Enter the year");
+		//MyDate obj=new MyDate();
+		//obj.day=05;
+		year=sc.nextInt();
+		System.out.println("The date is "day+"-"+month+"-"+year);
+	}//main
+}//test

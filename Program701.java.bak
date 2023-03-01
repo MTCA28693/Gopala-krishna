@@ -1,0 +1,17 @@
+class MyDate
+{
+	public int day;
+	public int month;
+	public int year;
+}//mydate
+class Test
+{
+	public static void main(String[] args) 
+	{
+		MyDate obj=new MyDate();
+		obj.day=05;
+		obj.month=08;
+		obj.year=2000;
+		System.out.println(obj.day+"-"+obj.month+"-"+obj.year);
+	}//main
+}//test

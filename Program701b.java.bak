@@ -1,0 +1,34 @@
+class MyDate
+{
+	public int day;
+	private int month;
+	public int year;
+	//public int get_day()
+	public int get_month()
+   // public int get_year()
+	{
+		//return day;
+		return month;
+		//return year;
+	}//get_day
+	//public void set_day(int d)
+	public void set_month(int m)
+	//public void set_year(int y)
+	{
+		//day=d;
+		month=m;
+		//year=y;
+	}//set_day
+}//mydate
+class Test2
+{
+	public static void main(String[] args) 
+	{
+		MyDate obj=new MyDate();
+		obj.day=05;
+		//obj.set_day(22);
+		obj.set_month(5);
+		obj.year=2001;
+		System.out.println(obj.day+"-"+obj.get_month()+"-"+obj.year);
+	}//main
+}//test
