@@ -1,0 +1,38 @@
+import java.util.*;
+class SumofDigits 
+{
+	private int num;
+	public void setNum(int num)
+	{
+		this.num=num;
+	}
+	public int getNum()
+	{
+		return this.num;
+	}
+	public int SumDigit()
+	{
+		int n=this.num;
+		int res,sum=0;
+		//if(int i=0;i<=n;i++)
+		while(n>0)
+		{
+			res=n%10;
+			sum=sum+res;
+			n=n/10;
+		}
+		return sum;
+	}
+}
+class Test
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter a Number");
+		int temp=sc.nextInt();
+		SumofDigits obj=new SumofDigits();
+		obj.setNum(temp);
+		System.out.println("\n"+obj.SumDigi());
+	}
+}
