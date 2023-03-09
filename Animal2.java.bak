@@ -1,0 +1,21 @@
+class Anima2
+{
+	Animal2(){
+		System.out.println("Animal2 is created");
+	}
+}
+	class Dog extends Animal2
+	{
+		Dog()
+		{
+			super();
+			System.out.println("Dog is created");
+			}
+	}
+	class TestSuper3
+	{
+	public static void main(String[] args) 
+	{
+		Dog d=new Dog();
+	}
+}
